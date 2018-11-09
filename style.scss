@@ -1,0 +1,20 @@
+
+$grid-column: 12;
+
+@for $i from 1 through $grid-column {
+  .col-#{$i} {
+    width: (100% / ($grid-column / $i));
+    float:left;
+    padding:20px;
+    background:#F00;
+    border:2px solid #DDD;
+    box-sizing: border-box;
+    @extend .extntion;
+  }
+}
+
+//For Style Only
+.extntion {
+  color: #FFF;
+  text-align: center;
+}
